@@ -8,7 +8,8 @@
         "lint": "eslint .",
         "lint:fix": "eslint --fix .",
         "format": "prettier -w \"**/*.{js,ts,tsx,md,mdx,json}\"",
-        "start": "next start"
+        "start": "next start",
+        "prepare": "husky install"
     },
     "dependencies": {
         "@types/node": "20.6.2",
@@ -23,12 +24,15 @@
         "typescript": "5.2.2"
     },
     "devDependencies": {
+        "@commitlint/cli": "^17.7.1",
+        "@commitlint/config-conventional": "^17.7.0",
         "@tszhong0411/eslint-config": "^1.0.23",
         "config-eslint": "^1.0.3",
         "config-prettier": "^0.1.0",
         "eslint": "^8.49.0",
         "eslint-config-next": "^13.5.0",
-        "eslint-config-rajeh": "^0.0.2"
+        "eslint-config-rajeh": "^0.2.2",
+        "husky": "^8.0.0"
     },
     "prettier": "config-prettier"
 }
