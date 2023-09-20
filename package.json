@@ -9,7 +9,8 @@
         "lint": "eslint .",
         "lint:fix": "eslint --fix .",
         "prepare": "husky install",
-        "start": "next start"
+        "start": "next start",
+        "type-check": "tsc --noEmit"
     },
     "dependencies": {
         "@types/node": "20.6.2",
