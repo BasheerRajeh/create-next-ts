@@ -1,5 +1,10 @@
 {
-    "extends": ["next/core-web-vitals", "rajeh"],
+    "extends": [
+        "next/core-web-vitals",
+        "rajeh",
+        "plugin:storybook/recommended"
+    ],
+    "ignorePatterns": ["storybook-static/*"],
     "parserOptions": {
         "project": "./tsconfig.json",
         "ecmaVersion": "latest"
