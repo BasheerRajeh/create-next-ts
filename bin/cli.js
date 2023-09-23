@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-/* eslint-disable no-console */
-import { execSync } from 'node:child_process'
+/* eslint-disable no-console, import/no-commonjs, unicorn/prefer-module  */
+const { execSync } = require('node:child_process')
 
 const runCommand = (command) => {
     try {
