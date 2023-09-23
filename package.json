@@ -6,6 +6,7 @@
         "type": "git",
         "url": "git+https://github.com/BasheerRajeh/create-next-ts"
     },
+    "bin": "./bin/cli.js",
     "scripts": {
         "build": "next build",
         "build-storybook": "storybook build",
