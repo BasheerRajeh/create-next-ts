@@ -1,7 +1,11 @@
 {
-    "private": true,
     "name": "next-template",
     "version": "0.1.0",
+    "author": "Basheer Rajeh <muhammadbasheerrajeh@hotmail.com> (https://github.com/BasheerRajeh)",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/BasheerRajeh/create-next-ts"
+    },
     "scripts": {
         "build": "next build",
         "build-storybook": "storybook build",
