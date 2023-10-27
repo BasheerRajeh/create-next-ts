@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
     title: {
         default: site.title,
-        template: `$s ${site.titleTemplate}`,
+        template: `%s ${site.titleTemplate}`,
     },
     description: site.description,
     robots: {
