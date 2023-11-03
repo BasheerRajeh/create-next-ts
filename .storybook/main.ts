@@ -1,5 +1,5 @@
 import type { StorybookConfig } from '@storybook/nextjs'
-import components from '../components.json'
+import path from 'path'
 
 const config: StorybookConfig = {
     stories: [
@@ -18,6 +18,16 @@ const config: StorybookConfig = {
     },
     docs: {
         autodocs: 'tag',
+    },
+    webpackFinal: async (config, { configType }) => {
+        if (config.resolve)
+            config.resolve.alias = {
+                ...config.resolve.alias,
+                '@/app': path.resolve(__dirname, '../app'),
+                '@/public': path.resolve(__dirname, '../public'),
+                '@/components': path.resolve(__dirname, '../components'),
+            }
+        return config
     },
     staticDirs: ['../public'],
 }
