@@ -28,6 +28,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         site: 'BasheerRajeh',
         creator: 'BasheerRajeh',
+        images: [`${site.url}/images/og.png`],
     },
     keywords: site.keywords,
     openGraph: {
