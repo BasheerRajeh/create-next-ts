@@ -28,6 +28,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         site: 'BasheerRajeh',
         creator: 'BasheerRajeh',
+        images: [`${site.url}/images/og.png`],
     },
     keywords: site.keywords,
     openGraph: {
@@ -37,6 +38,15 @@ export const metadata: Metadata = {
         siteName: site.title,
         description: site.description,
         locale: 'en-US',
+        images: [
+            {
+                url: `${site.url}/images/og.png`,
+                width: 1200,
+                height: 630,
+                alt: site.description,
+                type: 'image/png',
+            },
+        ],
     },
     manifest: '/favicon/site.webmanifest',
     icons: {
