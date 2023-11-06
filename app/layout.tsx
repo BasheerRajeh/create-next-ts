@@ -55,7 +55,18 @@ export const metadata: Metadata = {
     },
     manifest: '/favicon/site.webmanifest',
     icons: {
-        icon: '/favicon/favicon.svg',
+        icon: [
+            {
+                media: '(prefers-color-scheme: light)',
+                url: '/favicon/favicon.svg',
+                color: '#fff',
+            },
+            {
+                media: '(prefers-color-scheme: dark)',
+                url: '/favicon/favicon-light.svg',
+                color: '#000',
+            },
+        ],
         shortcut: '/favicon/favicon.svg',
         apple: [
             {
